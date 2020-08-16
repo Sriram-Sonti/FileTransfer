@@ -9,12 +9,14 @@ The server uses recvfrom to accept a packet. It then checks if that packets is a
 To run the program, please run `make`.
 
 Then start the server first with the following command:
+
 `./server <portnumber>`
 
-And the client with:
+And, in another terminal window, start the client with:
+
 `./client <hostname> <portnumber> <filename>`
 
-The client will then send over the requested file name to the server in TCP packets of size 512.
+The client will then send over the requested file to the server in TCP packets of size 512.
 
 Todo:
 1. Add option to encrypt the files. 
